@@ -1,0 +1,198 @@
+.hero__header {
+    position: absolute;
+    top: $header-top;
+    left: $header-side;
+    right: $header-side;
+    z-index: $z-header;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hero__logo {
+    flex-shrink: 0;
+    font-family: $font-tiro;
+    font-weight: 400;
+    font-size: $header-font-size;
+    line-height: 1;
+    color: $color-white;
+    text-decoration: none;
+    white-space: nowrap;
+    transition: color 2s ease;
+
+    @include focus-visible-ring;
+
+    &:hover,
+    &:focus-visible {
+        color: $color-light-gray;
+    }
+}
+
+.hero__nav {
+    margin-left: auto;
+}
+
+.hero__menu {
+    display: flex;
+    align-items: center;
+    gap: $nav-gap;
+}
+
+.hero__link {
+    display: block;
+    font-family: $font-tiro;
+    font-weight: 400;
+    font-size: $header-font-size;
+    line-height: 1;
+    color: $color-white;
+    text-decoration: none;
+    white-space: nowrap;
+    transition: color 2s ease;
+
+    @include focus-visible-ring;
+
+    &:hover,
+    &:focus-visible {
+        color: $color-light-gray;
+    }
+}
+
+.mobile-menu-button {
+    display: none;
+    flex-shrink: 0;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 24px;
+    height: 16px;
+    padding: 0;
+    border: 0;
+    background: transparent;
+    cursor: pointer;
+    color: $color-white;
+
+    @include focus-visible-ring;
+
+    span {
+        display: block;
+        width: 100%;
+        height: 2px;
+        background-color: currentColor;
+    }
+}
+
+.mobile-menu {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 229px;
+    height: 100%;
+    z-index: 20;
+    background: rgba(18, 18, 18, 0.85);
+    transform: translateX(100%);
+    pointer-events: none;
+}
+
+.mobile-menu.is-open {
+    pointer-events: auto;
+}
+
+.mobile-menu__links {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 105px 24px 0 0;
+    gap: 50px;
+}
+
+.mobile-menu__link {
+    display: inline-block;
+    font-family: $font-tiro;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1;
+    color: $color-white;
+    text-decoration: none;
+    white-space: nowrap;
+    transition: color 2s ease;
+
+    @include focus-visible-ring;
+
+    &:hover,
+    &:focus-visible,
+    &:active {
+        color: $color-muted;
+    }
+}
+
+.mobile-menu__email {
+    position: absolute;
+    top: 730px;
+    left: 49px;
+    right: 49px;
+    font-family: $font-tiro;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1;
+    color: $color-muted;
+    text-align: center;
+    white-space: nowrap;
+    text-decoration: none;
+
+    @include focus-visible-ring;
+}
+
+@include tablet {
+    .hero__header {
+        top: 40px;
+        left: 40px;
+        right: 40px;
+    }
+
+    .hero__logo,
+    .hero__link {
+        font-size: 18px;
+    }
+
+    .hero__menu {
+        gap: 22px;
+    }
+}
+
+@include mobile {
+    .hero__header {
+        top: 48px;
+        left: 25px;
+        right: 25px;
+        z-index: auto;
+    }
+
+    .hero__logo {
+        position: relative;
+        z-index: 10;
+        font-size: 18px;
+    }
+
+    .hero__nav {
+        display: none;
+    }
+
+    .mobile-menu-button {
+        display: flex;
+        position: relative;
+        z-index: 30;
+    }
+
+    .mobile-menu {
+        display: block;
+    }
+}
+
+@include reduced-motion {
+    .hero__logo,
+    .hero__link,
+    .mobile-menu__link {
+        transition: none;
+    }
+}

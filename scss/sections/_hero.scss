@@ -1,0 +1,184 @@
+.hero {
+    position: relative;
+    width: 100%;
+    height: $desktop-height;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+.hero__bg {
+    position: absolute;
+    inset: 0;
+    z-index: $z-bg;
+    pointer-events: none;
+}
+
+.hero__bg-image {
+    width: 100%;
+    height: 100%;
+    max-width: none;
+    object-fit: cover;
+    object-position: center;
+}
+
+.hero__title {
+    position: absolute;
+    inset: 0;
+    z-index: $z-content;
+    pointer-events: none;
+}
+
+.hero__designer,
+.hero__portfolio {
+    position: absolute;
+    margin: 0;
+    font-weight: 400;
+    white-space: nowrap;
+    pointer-events: none;
+    opacity: 0;
+}
+
+.hero__designer {
+    top: $hero-designer-top;
+    left: $hero-designer-left;
+    z-index: 1;
+    font-family: $font-splash;
+    font-size: $title-size;
+    line-height: 1;
+    color: $color-light-gray;
+}
+
+.hero__portfolio {
+    top: $hero-portfolio-top;
+    left: $hero-portfolio-left;
+    z-index: 2;
+    font-family: $font-ramaraja;
+    font-size: $title-size;
+    line-height: 1;
+    color: $color-white;
+}
+
+.hero__scroll {
+    position: absolute;
+    top: $arrow-top;
+    right: $arrow-right;
+    z-index: $z-arrow;
+    display: block;
+    width: $arrow-width;
+    height: $arrow-height;
+
+    @include focus-visible-ring;
+}
+
+.hero__scroll-icon {
+    width: $arrow-width;
+    height: $arrow-height;
+    max-width: none;
+    animation: hero-arrow-float 2s ease-in-out infinite alternate;
+}
+
+@keyframes hero-arrow-float {
+    from {
+        transform: translate3d(0, 0, 0);
+    }
+
+    to {
+        transform: translate3d(0, 10px, 0);
+    }
+}
+
+@include below-desktop {
+    .hero__designer {
+        top: calc(436 / 1080 * 100%);
+        left: calc(247 / 1920 * 100%);
+        font-size: clamp(2.75rem, 5.208vw, 100px);
+    }
+
+    .hero__portfolio {
+        top: calc(509 / 1080 * 100%);
+        left: calc(1117 / 1920 * 100%);
+        font-size: clamp(2.75rem, 5.208vw, 100px);
+    }
+
+    .hero__scroll {
+        top: auto;
+        bottom: 74px;
+        right: clamp(24px, 4.6875vw, 90px);
+    }
+}
+
+@include tablet {
+    .hero__scroll {
+        bottom: 48px;
+        height: 64px;
+    }
+
+    .hero__scroll-icon {
+        height: 64px;
+    }
+}
+
+@include mobile {
+    .hero {
+        height: 874px;
+        min-height: 100svh;
+    }
+
+    .hero__bg-image {
+        object-position: 47% 50%;
+    }
+
+    .hero__title {
+        z-index: 2;
+    }
+
+    .hero__designer {
+        top: 390px;
+        left: 2px;
+        font-size: 38px;
+    }
+
+    .hero__portfolio {
+        top: 426px;
+        left: auto;
+        right: 22px;
+        font-size: 32px;
+    }
+
+    .hero__scroll {
+        top: auto;
+        right: 25px;
+        bottom: 50px;
+        width: 12px;
+        height: 50px;
+        z-index: 2;
+    }
+
+    .hero__scroll-icon {
+        width: 12px;
+        height: 50px;
+        object-fit: contain;
+        animation-name: hero-arrow-float-mobile;
+    }
+}
+
+@keyframes hero-arrow-float-mobile {
+    from {
+        transform: translate3d(0, 0, 0);
+    }
+
+    to {
+        transform: translate3d(0, 8px, 0);
+    }
+}
+
+@include reduced-motion {
+    .hero__designer,
+    .hero__portfolio {
+        opacity: 1;
+    }
+
+    .hero__scroll-icon {
+        animation: none;
+    }
+}

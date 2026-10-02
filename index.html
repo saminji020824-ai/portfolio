@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>saalswl Portfolio</title>
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600&family=Inter+Tight:wght@300&family=Ramaraja&family=Splash&family=Tiro+Bangla:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./assets/css/main.css">
+</head>
+<body>
+    <main>
+        <section id="home" class="hero">
+            <div class="hero__bg">
+                <img
+                    class="hero__bg-image"
+                    src="./assets/images/hero-bg.png"
+                    alt=""
+                    width="1920"
+                    height="1080"
+                    decoding="async"
+                >
+            </div>
+
+            <header class="hero__header">
+                <a href="#home" class="hero__logo" aria-label="포트폴리오 메인으로 이동">
+                    saalswl
+                </a>
+
+                <nav class="hero__nav" aria-label="주요 메뉴">
+                    <ul class="hero__menu">
+                        <li class="hero__item">
+                            <a href="#about" class="hero__link">ABOUT ME</a>
+                        </li>
+                        <li class="hero__item">
+                            <a href="#main-project" class="hero__link">PROJECT</a>
+                        </li>
+                        <li class="hero__item">
+                            <a href="#contact" class="hero__link">CONTACT</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <button
+                    class="mobile-menu-button"
+                    type="button"
+                    aria-label="메뉴 열기"
+                    aria-expanded="false"
+                    aria-controls="mobile-menu"
+                >
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </header>
+
+            <nav
+                id="mobile-menu"
+                class="mobile-menu"
+                aria-label="모바일 메뉴"
+                aria-hidden="true"
+            >
+                <div class="mobile-menu__links">
+                    <a href="#about" class="mobile-menu__link">ABOUT ME</a>
+                    <a href="#main-project" class="mobile-menu__link">PROJECT</a>
+                    <a href="#contact" class="mobile-menu__link">CONTACT</a>
+                </div>
+
+                <a class="mobile-menu__email" href="mailto:jjar00@naver.com">
+                    jjar00@naver.com
+                </a>
+            </nav>
+
+            <div class="hero__title">
+                <p class="hero__designer">WEB DESIGNER</p>
+                <h1 class="hero__portfolio">PORTFOLIO</h1>
+            </div>
+
+            <a href="#about" class="hero__scroll" aria-label="About section으로 이동">
+                <picture>
+                    <source media="(max-width: 402px)" srcset="./assets/images/scroll-arrow-mobile.png">
+                    <img
+                        class="hero__scroll-icon"
+                        src="./assets/images/scroll-arrow.png"
+                        alt=""
+                        width="12"
+                        height="85"
+                        decoding="async"
+                    >
+                </picture>
+            </a>
+        </section>
+
+        <section id="mindset-tenacious" class="mindset-section mindset-section--tenacious">
+            <div class="mindset-section__inner">
+                <h2 class="mindset-section__title-en" data-text="Tenacious" aria-label="Tenacious"></h2>
+                <p class="mindset-section__title-ko" data-text="포기하지 않는" aria-label="포기하지 않는"></p>
+            </div>
+        </section>
+
+        <section id="mindset-perfectionistic" class="mindset-section mindset-section--perfectionistic">
+            <div class="mindset-section__inner">
+                <h2 class="mindset-section__title-en" data-text="Perfectionistic" aria-label="Perfectionistic"></h2>
+                <p class="mindset-section__title-ko" data-text="완벽주의자" aria-label="완벽주의자"></p>
+            </div>
+        </section>
+
+        <section id="about" class="about-profile">
+            <div class="about-profile__visual">
+                <picture>
+                    <source media="(max-width: 402px)" srcset="./assets/images/about-flower-mobile.png">
+                    <img
+                        class="about-profile__visual-image"
+                        src="./assets/images/about-flower-desktop.png"
+                        alt=""
+                        width="1920"
+                        height="520"
+                        decoding="async"
+                    >
+                </picture>
+            </div>
+
+            <div class="about-profile__card">
+                <h2 class="about-profile__title about-profile__anim">ABOUT ME</h2>
+
+                <div class="about-profile__content">
+                    <div class="about-profile__portrait about-profile__anim">
+                        <img
+                            class="about-profile__portrait-image"
+                            src="./assets/images/about-portrait.png"
+                            alt="웹디자이너 사민지 프로필 사진"
+                            width="417"
+                            height="587"
+                            decoding="async"
+                        >
+                    </div>
+
+                    <div class="about-profile__info">
+                        <p class="about-profile__name about-profile__anim">Sa minji</p>
+
+                        <p class="about-profile__lead about-profile__anim">
+                            브랜드의 첫인상을 화면으로<br class="about-profile__lead-break">만드는 웹디자이너입니다.
+                        </p>
+
+                        <p class="about-profile__description about-profile__anim">
+                            보기 좋은 디자인보다 오래 기억에 남는<br>
+                            분위기와 경험을 만들고 싶습니다.<br>
+                            작은 여백과 한 줄의 문구까지 이유 있게 디자인합니다.
+                        </p>
+
+                        <a
+                            class="about-profile__more about-profile__anim"
+                            href="https://buly.kr/Aasf1T6"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="자기소개 더보기 — Notion 자기소개 및 이력서"
+                        >
+                            <span>자기소개 더보기</span>
+                            <span class="about-profile__more-icon">
+                                <img
+                                    class="about-profile__more-icon-image"
+                                    src="./assets/images/about-more-button.png"
+                                    alt=""
+                                    width="27"
+                                    height="27"
+                                    decoding="async"
+                                >
+                            </span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="about-profile__skills">
+                    <div class="skill-marquee" aria-label="사용 툴 로고">
+                        <div class="skill-marquee__track">
+                            <div class="skill-marquee__group">
+                                <div class="skill-marquee__item">
+                                    <img src="./assets/images/skill-photoshop.png" alt="Adobe Photoshop" width="158" height="150">
+                                </div>
+                                <div class="skill-marquee__item">
+                                    <img src="./assets/images/skill-illustrator.png" alt="Adobe Illustrator" width="158" height="150">
+                                </div>
+                                <div class="skill-marquee__item">
+                                    <img src="./assets/images/skill-figma.png" alt="Figma" width="158" height="150">
+                                </div>
+                                <div class="skill-marquee__item">
+                                    <img src="./assets/images/skill-html5.png" alt="HTML5" width="158" height="150">
+                                </div>
+                                <div class="skill-marquee__item">
+                                    <img src="./assets/images/skill-css3.png" alt="CSS3" width="158" height="150">
+                                </div>
+                                <div class="skill-marquee__item">
+                                    <img src="./assets/images/skill-javascript.png" alt="JavaScript" width="158" height="150">
+                                </div>
+                                <div class="skill-marquee__item">
+                                    <img src="./assets/images/skill-chatgpt.png" alt="ChatGPT" width="158" height="150">
+                                </div>
+                                <div class="skill-marquee__item">
+                                    <img src="./assets/images/skill-ai.png" alt="AI" width="158" height="150">
+                                </div>
+                                <div class="skill-marquee__item">
+                                    <img src="./assets/images/skill-cube.png" alt="Cinema 4D" width="158" height="150">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="main-project" class="project-showcase project-showcase--fruen">
+            <img
+                class="project-showcase__background"
+                src="./assets/images/project-fruen-bg.png"
+                alt=""
+                width="1920"
+                height="1080"
+                decoding="async"
+            >
+            <div class="project-showcase__content">
+                <div class="project-showcase__info">
+                    <h2 class="project-showcase__title">PROJECT 01  ·  F R U E N</h2>
+                    <p class="project-showcase__description">
+                        제로슈가 스틱형 과일청 브랜드 FRUEN의 브랜딩부터<br>
+                        UI/UX 반응형 웹 구현까지 진행한 프로젝트입니다.
+                    </p>
+                    <p class="project-showcase__role">Planning · Branding · UI/UX · Publishing</p>
+                    <div class="project-showcase__actions">
+                        <a
+                            class="project-showcase__button project-showcase__button--solid"
+                            href="https://fruen.vercel.app/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >Website</a>
+                        <a
+                            class="project-showcase__button project-showcase__button--outline"
+                            href="https://buly.kr/3jB3RU7"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >Figma</a>
+                        <button
+                            type="button"
+                            class="project-showcase__qr"
+                            data-qr-open
+                            data-project="fruen"
+                            data-qr-image="./assets/images/project-fruen-qr.png"
+                            aria-haspopup="dialog"
+                            aria-controls="fruen-qr-modal"
+                            aria-expanded="false"
+                            aria-label="FRUEN QR 코드 보기"
+                        >
+                            <img src="./assets/images/project-qr-icon.png" alt="" width="27" height="27">
+                        </button>
+                    </div>
+                </div>
+                <div class="project-showcase__devices">
+                    <div class="project-showcase__device project-showcase__device--laptop">
+                        <img src="./assets/images/project-fruen-laptop.png" alt="FRUEN 프로젝트 데스크톱 화면" width="616" height="368" decoding="async">
+                    </div>
+                    <div class="project-showcase__device project-showcase__device--tablet">
+                        <img src="./assets/images/project-fruen-tablet.png" alt="FRUEN 프로젝트 태블릿 화면" width="236" height="297" decoding="async">
+                    </div>
+                    <div class="project-showcase__device project-showcase__device--mobile">
+                        <img src="./assets/images/project-fruen-mobile.png" alt="FRUEN 프로젝트 모바일 화면" width="116" height="234" decoding="async">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="dropfilm-project" class="project-showcase project-showcase--dropfilm">
+            <img
+                class="project-showcase__background"
+                src="./assets/images/project-dropfilm-bg.png"
+                alt=""
+                width="1920"
+                height="1080"
+                decoding="async"
+            >
+            <div class="project-showcase__content">
+                <div class="project-showcase__info">
+                    <h2 class="project-showcase__title">PROJECT 02  ·  DROPFILM</h2>
+                    <p class="project-showcase__description">
+                        무인 필름카메라 대여부터 셀프 현상까지 연결되는<br>
+                        서비스의 브랜드 및 웹사이트를 기획한 프로젝트입니다.
+                    </p>
+                    <p class="project-showcase__role">Planning · Branding · UI/UX · Publishing</p>
+                    <div class="project-showcase__actions">
+                        <a
+                            class="project-showcase__button project-showcase__button--solid"
+                            href="https://dropfilm-ecru.vercel.app/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >Website</a>
+                        <a
+                            class="project-showcase__button project-showcase__button--outline"
+                            href="https://buly.kr/7FUD4aP"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >Figma</a>
+                        <button
+                            type="button"
+                            class="project-showcase__qr"
+                            data-qr-open
+                            data-project="dropfilm"
+                            data-qr-image="./assets/images/project-dropfilm-qr.png"
+                            aria-haspopup="dialog"
+                            aria-controls="fruen-qr-modal"
+                            aria-expanded="false"
+                            aria-label="DROPFILM QR 코드 보기"
+                        >
+                            <img src="./assets/images/project-qr-icon.png" alt="" width="27" height="27">
+                        </button>
+                    </div>
+                </div>
+                <div class="project-showcase__devices">
+                    <div class="project-showcase__device project-showcase__device--laptop">
+                        <img src="./assets/images/project-dropfilm-laptop.png" alt="DROPFILM 프로젝트 데스크톱 화면" width="616" height="368" decoding="async">
+                    </div>
+                    <div class="project-showcase__device project-showcase__device--tablet">
+                        <img src="./assets/images/project-dropfilm-tablet.png" alt="DROPFILM 프로젝트 태블릿 화면" width="236" height="297" decoding="async">
+                    </div>
+                    <div class="project-showcase__device project-showcase__device--mobile">
+                        <img src="./assets/images/project-dropfilm-mobile.png" alt="DROPFILM 프로젝트 모바일 화면" width="116" height="234" decoding="async">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="side-project" class="side-project-horizontal">
+            <div class="side-project-horizontal__track">
+                <article class="side-project-panel side-project-panel--oren">
+                    <h3 class="side-project-panel__brand">O R É N</h3>
+                    <div class="side-project-panel__visual">
+                        <img
+                            src="./assets/images/side-oren-imac.png"
+                            alt="ORÉN AI 스마트워치 웹사이트 프로젝트"
+                            width="857"
+                            height="676"
+                            decoding="async"
+                        >
+                    </div>
+                    <div class="side-project-panel__content">
+                        <h2 class="side-project-panel__title">SIDE PROJECT</h2>
+                        <span class="side-project-panel__line" aria-hidden="true"></span>
+                        <p class="side-project-panel__contribution">기여도 100%</p>
+                        <p class="side-project-panel__description">감정 변화와 활동 데이터를 기록하고 분석하는 AI 스마트워치를 중심으로<br>
+                            ORÉN만의 기술과 서비스 흐름을 직관적으로 전달하고 제품의 기능과<br>
+                            브랜드 경험을 담은 반응형 웹사이트를 기획했습니다.</p>
+                        <p class="side-project-panel__role">Planning · Branding · UI/UX · Publishing</p>
+                        <div class="side-project-panel__actions">
+                            <!-- TODO: ORÉN Website URL 연결 예정. 아래 href="#" 만 실제 URL로 바꾸면 됩니다. -->
+                            <a
+                                class="side-project-panel__button side-project-panel__button--solid"
+                                href="#"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                aria-label="ORÉN Website">Website</a>
+                            <a
+                                class="side-project-panel__button side-project-panel__button--outline"
+                                href="https://buly.kr/8840JWP"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                aria-label="ORÉN Figma"
+                            >Figma</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="side-project-panel side-project-panel--aurest">
+                    <h3 class="side-project-panel__brand">AUREST</h3>
+                    <div class="side-project-panel__visual">
+                        <img
+                            src="./assets/images/side-aurest-imac.png"
+                            alt="AUREST 프리미엄 글램핑 랜딩페이지 프로젝트"
+                            width="857"
+                            height="676"
+                            decoding="async"
+                        >
+                    </div>
+                    <div class="side-project-panel__content">
+                        <h2 class="side-project-panel__title">SIDE PROJECT</h2>
+                        <span class="side-project-panel__line" aria-hidden="true"></span>
+                        <p class="side-project-panel__contribution">기여도 100%</p>
+                        <p class="side-project-panel__description">프리미엄 글램핑 공간의 분위기와 주요 시설을 직관적으로 보여주고<br>
+                            사용자가 숙소 정보를 빠르게 확인할 수 있도록 구성했습니다.<br>
+                            브랜드 감성과 예약 흐름을 담은 AUREST 랜딩페이지 프로젝트입니다.</p>
+                        <p class="side-project-panel__role">Planning · Branding · UI/UX · Publishing</p>
+                        <div class="side-project-panel__actions">
+                            <!-- TODO: AUREST Website URL 연결 예정. 아래 href="#" 만 실제 URL로 바꾸면 됩니다. -->
+                            <a
+                                class="side-project-panel__button side-project-panel__button--solid"
+                                href="#"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                aria-label="AUREST Website"
+                            >Website</a>
+                            <a
+                                class="side-project-panel__button side-project-panel__button--outline"
+                                href="https://buly.kr/4FvKjYn"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                aria-label="AUREST Figma"
+                            >Figma</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="side-project-panel side-project-panel--yellowballoon">
+                    <h3 class="side-project-panel__brand">노랑풍선</h3>
+                    <div class="side-project-panel__visual">
+                        <img
+                            src="./assets/images/side-balloon-imac.png"
+                            alt="노랑풍선 클론 코딩 웹사이트 프로젝트"
+                            width="857"
+                            height="676"
+                            decoding="async"
+                        >
+                    </div>
+                    <div class="side-project-panel__content">
+                        <h2 class="side-project-panel__title">SIDE PROJECT</h2>
+                        <span class="side-project-panel__line" aria-hidden="true"></span>
+                        <p class="side-project-panel__contribution">기여도 100%</p>
+                        <p class="side-project-panel__description">노랑풍선 웹사이트의 레이아웃과 UI 구조를 분석하고<br>
+                            HTML·CSS·JavaScript를 활용해 주요 화면을 직접 구현했습니다.<br>
+                            웹 퍼블리싱 실습을 위해 진행한 클론 코딩 프로젝트입니다.</p>
+                        <p class="side-project-panel__role">Planning · Branding · UI/UX · Publishing</p>
+                        <div class="side-project-panel__actions">
+                           
+                            <a
+                                class="side-project-panel__button side-project-panel__button--solid"
+                                href="https://starlit-heliotrope-5d4d31.netlify.app"
+                                aria-label="노랑풍선 Website"
+                            >Website</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="design" class="design-gallery">
+            <div class="design-gallery__header portfolio-container">
+                <h2 class="design-gallery__title">Design</h2>
+                <p class="design-gallery__description">포스터와 그래픽 작업을 모은 아카이브입니다.</p>
+            </div>
+            <div class="design-gallery__slider">
+                <div class="design-gallery__track">
+                    <div class="design-gallery__group">
+                        <button class="design-gallery__item design-gallery__item--poster" type="button" aria-label="디자인 작업 이미지 크게 보기" data-modal-image="./assets/images/design-large-tokyo.png" data-modal-alt="도쿄 그래픽 포스터 디자인" data-modal-group="poster">
+                            <img class="design-gallery__thumb" src="./assets/images/design-thumb-tokyo.png" alt="도쿄 그래픽 포스터 디자인" width="352" height="470" decoding="async">
+                            <img class="design-gallery__preview" src="./assets/images/design-large-tokyo.png" alt="" width="352" height="470" decoding="async" aria-hidden="true">
+                        </button>
+                        <button class="design-gallery__item design-gallery__item--poster" type="button" aria-label="디자인 작업 이미지 크게 보기" data-modal-image="./assets/images/design-large-apple.png" data-modal-alt="애플 그래픽 포스터 디자인" data-modal-group="poster">
+                            <img class="design-gallery__thumb" src="./assets/images/design-thumb-apple.png" alt="애플 그래픽 포스터 디자인" width="352" height="470" decoding="async">
+                            <img class="design-gallery__preview" src="./assets/images/design-large-apple.png" alt="" width="352" height="470" decoding="async" aria-hidden="true">
+                        </button>
+                        <button class="design-gallery__item design-gallery__item--poster" type="button" aria-label="디자인 작업 이미지 크게 보기" data-modal-image="./assets/images/design-large-toast.png" data-modal-alt="오픈 토스트 광고 디자인" data-modal-group="poster">
+                            <img class="design-gallery__thumb" src="./assets/images/design-thumb-toast.png" alt="오픈 토스트 광고 디자인" width="352" height="470" decoding="async">
+                            <img class="design-gallery__preview" src="./assets/images/design-large-toast.png" alt="" width="352" height="470" decoding="async" aria-hidden="true">
+                        </button>
+                        <button class="design-gallery__item design-gallery__item--pack" type="button" aria-label="디자인 작업 이미지 크게 보기" data-modal-image="./assets/images/wine.png" data-modal-alt="Pocket Bar 와인 패키지 디자인" data-modal-group="pack">
+                            <img class="design-gallery__thumb" src="./assets/images/design-thumb-wine.png" alt="Pocket Bar 와인 패키지 디자인" width="320" height="470" decoding="async">
+                            <img class="design-gallery__preview" src="./assets/images/wine.png" alt="" width="320" height="470" decoding="async" aria-hidden="true">
+                        </button>
+                        <button class="design-gallery__item design-gallery__item--pack" type="button" aria-label="디자인 작업 이미지 크게 보기" data-modal-image="./assets/images/whisky.png" data-modal-alt="Pocket Bar 위스키 패키지 디자인" data-modal-group="pack">
+                            <img class="design-gallery__thumb" src="./assets/images/design-thumb-whisky.png" alt="Pocket Bar 위스키 패키지 디자인" width="320" height="470" decoding="async">
+                            <img class="design-gallery__preview" src="./assets/images/whisky.png" alt="" width="320" height="470" decoding="async" aria-hidden="true">
+                        </button>
+                        <button class="design-gallery__item design-gallery__item--pack" type="button" aria-label="디자인 작업 이미지 크게 보기" data-modal-image="./assets/images/soju.png" data-modal-alt="Pocket Bar 소주 패키지 디자인" data-modal-group="pack">
+                            <img class="design-gallery__thumb" src="./assets/images/design-thumb-soju.png" alt="Pocket Bar 소주 패키지 디자인" width="320" height="470" decoding="async">
+                            <img class="design-gallery__preview" src="./assets/images/soju.png" alt="" width="320" height="470" decoding="async" aria-hidden="true">
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-ending">
+            <div class="contact-poster">
+                <img class="contact-poster__base" src="./assets/images/contact-poster.png" alt="" width="656" height="512" decoding="async">
+                <div class="contact-poster__message-mask">
+                    <div class="contact-poster__line contact-poster__line--lets">
+                        <img class="contact-poster__message" src="./assets/images/contact-message.png" alt="Let's work together" width="343" height="230" decoding="async">
+                    </div>
+                    <div class="contact-poster__line contact-poster__line--work" aria-hidden="true">
+                        <img class="contact-poster__message" src="./assets/images/contact-message.png" alt="" width="343" height="230" decoding="async">
+                    </div>
+                    <div class="contact-poster__line contact-poster__line--together" aria-hidden="true">
+                        <img class="contact-poster__message" src="./assets/images/contact-message.png" alt="" width="343" height="230" decoding="async">
+                    </div>
+                </div>
+                <div class="contact-poster__email-mask">
+                    <img class="contact-poster__email" src="./assets/images/contact-email.png" alt="jjar00@naver.com" width="242" height="33" decoding="async">
+                </div>
+            </div>
+            <a class="contact-ending__mail" href="mailto:jjar00@naver.com" aria-label="jjar00@naver.com으로 이메일 보내기">Send Mail →</a>
+            <p class="contact-ending__thanks">Thank you for <span class="contact-ending__thanks-line">watching</span></p>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="site-footer__inner">
+            <div class="site-footer__top">
+                <p class="site-footer__name">saalswl</p>
+                <div class="site-footer__contacts">
+                    <div class="site-footer__contact-row">
+                        <span class="site-footer__label">MAIL</span>
+                        <span class="site-footer__divider" aria-hidden="true"></span>
+                        <a class="site-footer__value" href="mailto:jjar00@naver.com">jjar00@naver.com</a>
+                    </div>
+                    <div class="site-footer__contact-row">
+                        <span class="site-footer__label">TEL</span>
+                        <span class="site-footer__divider" aria-hidden="true"></span>
+                        <a class="site-footer__value" href="tel:+821049451417">+82) 010-4945-1417</a>
+                    </div>
+                </div>
+            </div>
+            <div class="site-footer__bottom">
+                <p class="site-footer__copyright">© 2026 PORTFOLIO</p>
+                <p class="site-footer__role">UI/UX DESIGN · WEB PUBLISHING</p>
+            </div>
+        </div>
+    </footer>
+
+    <div
+        id="fruen-qr-modal"
+        class="qr-modal"
+        role="dialog"
+        aria-modal="true"
+        aria-label="FRUEN QR 코드"
+        aria-hidden="true"
+    >
+        <div class="qr-modal__backdrop" data-qr-close></div>
+        <div class="qr-modal__panel">
+            <button class="qr-modal__close" type="button" data-qr-close aria-label="닫기">
+                <img src="./assets/images/project-modal-close.png" alt="" width="27" height="27">
+            </button>
+            <img
+                class="qr-modal__code"
+                src="./assets/images/project-fruen-qr.png"
+                alt="FRUEN QR 코드"
+                width="600"
+                height="600"
+                decoding="async"
+            >
+        </div>
+    </div>
+
+    <div
+        id="design-gallery-modal"
+        class="design-gallery-modal"
+        role="dialog"
+        aria-modal="true"
+        aria-label="디자인 작업 크게 보기"
+        aria-hidden="true"
+    >
+        <div class="design-gallery-modal__overlay"></div>
+        <div class="design-gallery-modal__dialog">
+            <img class="design-gallery-modal__image" width="500" height="667" alt="">
+            <button class="design-gallery-modal__close" type="button" aria-label="닫기">
+                <img src="./assets/images/design-modal-close.png" alt="" width="20" height="20">
+            </button>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.20/dist/lenis.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>

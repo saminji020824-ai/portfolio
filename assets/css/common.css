@@ -1,0 +1,27 @@
+:root {
+    /* Color */
+    --color-white: #ffffff;
+    --color-black: #121212;
+
+
+    /* Font */
+    --font-tiro: "Tiro Bangla", serif;
+
+
+    /* PC Grid */
+    --grid-column-width: 122px;
+    --grid-gutter: 25px;
+    --grid-max-width: 1739px;
+}
+
+
+/* ========================================
+   Common Layout
+======================================== */
+
+.inner {
+    width: calc(100% - 181px);
+    max-width: var(--grid-max-width);
+
+    margin: 0 auto;
+}

@@ -1,0 +1,20 @@
+:root {
+    --color-white: #{$color-white};
+    --color-light-gray: #{$color-light-gray};
+    --color-black: #{$color-black};
+
+    --font-tiro: #{$font-tiro};
+    --font-splash: #{$font-splash};
+    --font-ramaraja: #{$font-ramaraja};
+    --font-pretendard: #{$font-pretendard};
+
+    --grid-column-width: #{$grid-column};
+    --grid-gutter: #{$grid-gutter};
+    --grid-max-width: #{$grid-max-width};
+}
+
+.portfolio-container {
+    width: calc(100% - ($header-side * 2));
+    max-width: $grid-max-width;
+    margin: 0 auto;
+}

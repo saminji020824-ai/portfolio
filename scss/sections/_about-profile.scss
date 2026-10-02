@@ -1,0 +1,326 @@
+.about-profile {
+    position: relative;
+    width: 100%;
+    min-height: 1515px;
+    height: auto;
+    overflow-x: hidden;
+    background-color: #ffffff;
+}
+
+.about-profile__visual {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    width: 100%;
+    height: 520px;
+    pointer-events: none;
+}
+
+.about-profile__visual-image {
+    width: 100%;
+    height: 100%;
+    max-width: none;
+    object-fit: cover;
+    object-position: center top;
+}
+
+.about-profile__card {
+    position: relative;
+    z-index: 2;
+    width: 1739px;
+    max-width: calc(100% - 180px);
+    min-height: 1171px;
+    height: auto;
+    margin: 344px auto 0;
+    padding-top: 150px;
+    background-color: #ffffff;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+}
+
+.about-profile__title {
+    margin: 0 0 0 148px;
+    font-family: $font-ramaraja;
+    font-weight: 400;
+    font-size: 38px;
+    line-height: 1;
+    color: $color-black;
+}
+
+.about-profile__content {
+    display: flex;
+    align-items: flex-start;
+    margin-top: 117px;
+    padding-left: 294px;
+    gap: 170px;
+}
+
+.about-profile__portrait {
+    flex-shrink: 0;
+    width: 416.91px;
+    height: 587px;
+}
+
+.about-profile__portrait-image {
+    width: 100%;
+    height: 100%;
+    max-width: none;
+    object-fit: cover;
+    object-position: center top;
+}
+
+.about-profile__info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 8px;
+}
+
+.about-profile__name {
+    margin: 0;
+    font-family: $font-splash;
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 1;
+    color: $color-black;
+}
+
+.about-profile__lead {
+    margin: 60px 0 0;
+    font-family: $font-pretendard;
+    font-weight: 300;
+    font-size: 26px;
+    line-height: 1.5;
+    color: $color-black;
+}
+
+.about-profile__description {
+    margin: 30px 0 0;
+    font-family: $font-pretendard;
+    font-weight: 300;
+    font-size: 26px;
+    line-height: 1.5;
+    color: $color-black;
+}
+
+.about-profile__more {
+    display: inline-flex;
+    align-items: center;
+    margin-top: 70px;
+    gap: 30px;
+    font-family: $font-pretendard;
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 1;
+    color: $color-black;
+    text-decoration: none;
+
+    &:focus {
+        outline: none;
+    }
+
+    &:focus-visible {
+        outline: 1px solid rgba(18, 18, 18, 0.55);
+        outline-offset: 4px;
+    }
+}
+
+.about-profile__more-icon {
+    position: relative;
+    display: inline-flex;
+    flex-shrink: 0;
+    width: 27px;
+    height: 27px;
+    overflow: hidden;
+    border-radius: 50%;
+    background-color: transparent;
+    transition: background-color 0.5s ease;
+
+    &::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background-color: #c3b6b3;
+        border-radius: 50%;
+        opacity: 0;
+        mix-blend-mode: color;
+        pointer-events: none;
+        transition: opacity 0.5s ease;
+    }
+}
+
+.about-profile__more-icon-image {
+    position: relative;
+    z-index: 1;
+    width: 27px;
+    height: 27px;
+    max-width: none;
+    object-fit: contain;
+}
+
+.about-profile__more:hover .about-profile__more-icon,
+.about-profile__more:focus-visible .about-profile__more-icon,
+.about-profile__more:active .about-profile__more-icon {
+    background-color: #c3b6b3;
+
+    &::after {
+        opacity: 1;
+    }
+}
+
+.about-profile__lead-break {
+    display: none;
+}
+
+.about-profile__skills {
+    position: relative;
+    z-index: 3;
+    width: 100vw;
+    max-width: 100vw;
+    margin-left: calc(50% - 50vw);
+    padding-top: 150px;
+    padding-bottom: 150px;
+}
+
+.skill-marquee {
+    width: 100%;
+    overflow: hidden;
+}
+
+.skill-marquee__track {
+    display: flex;
+    width: max-content;
+    gap: 130px;
+    will-change: transform;
+}
+
+.skill-marquee__group {
+    display: flex;
+    flex-shrink: 0;
+    align-items: center;
+    gap: 130px;
+}
+
+.skill-marquee__item {
+    flex: 0 0 128px;
+    width: 128px;
+    height: 120px;
+}
+
+.skill-marquee__item img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    max-width: none;
+    object-fit: contain;
+}
+
+@include mobile {
+    .about-profile {
+        min-height: 987px;
+        height: auto;
+        background-color: #ffffff;
+    }
+
+    .about-profile::after {
+        content: "";
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 1;
+        height: 332px;
+        background-color: #ffffff;
+    }
+
+    .about-profile__visual {
+        height: 655px;
+    }
+
+    .about-profile__card {
+        top: auto;
+        left: auto;
+        width: 354px;
+        max-width: calc(100% - 48px);
+        min-height: 704px;
+        height: auto;
+        margin: 283px auto 0;
+        padding-top: 60px;
+        border-radius: 30px;
+        transform: none;
+    }
+
+    .about-profile__title {
+        margin: 0;
+        font-size: 26px;
+        text-align: center;
+    }
+
+    .about-profile__content {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 30px;
+        padding: 0 24px;
+        gap: 30px;
+    }
+
+    .about-profile__portrait {
+        width: 210px;
+        height: 296px;
+    }
+
+    .about-profile__info {
+        align-items: center;
+        width: 100%;
+        padding-top: 0;
+        text-align: center;
+    }
+
+    .about-profile__name {
+        font-size: 32px;
+    }
+
+    .about-profile__lead {
+        margin-top: 35px;
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .about-profile__lead-break {
+        display: block;
+    }
+
+    .about-profile__description {
+        display: none;
+    }
+
+    .about-profile__more {
+        margin-top: 75px;
+        font-size: 16px;
+        justify-content: center;
+    }
+
+    .about-profile__skills {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+
+    .skill-marquee__track,
+    .skill-marquee__group {
+        gap: 70px;
+    }
+
+    .skill-marquee__item {
+        flex: 0 0 45px;
+        width: 45px;
+        height: 42px;
+    }
+}
+
+@include reduced-motion {
+    .about-profile__more-icon,
+    .about-profile__more-icon::after {
+        transition: none;
+    }
+}

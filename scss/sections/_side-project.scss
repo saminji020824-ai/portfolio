@@ -1,0 +1,257 @@
+.side-project-horizontal {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background-color: $color-about-bg;
+}
+
+.side-project-horizontal__track {
+    display: flex;
+    width: 300vw;
+    height: 100%;
+    will-change: transform;
+}
+
+.side-project-panel {
+    position: relative;
+    flex: 0 0 100vw;
+    width: 100vw;
+    height: 1080px;
+    overflow: hidden;
+    background-color: $color-about-bg;
+}
+
+.side-project-panel__brand {
+    position: absolute;
+    top: 82px;
+    right: 90px;
+    z-index: 2;
+    margin: 0;
+    color: $color-black;
+    line-height: 1;
+    text-align: right;
+}
+
+.side-project-panel--oren .side-project-panel__brand {
+    font-family: "Modern No. 20", serif;
+    font-weight: 400;
+    font-size: 40px;
+}
+
+.side-project-panel--aurest .side-project-panel__brand {
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 600;
+    font-size: 36px;
+}
+
+.side-project-panel--yellowballoon .side-project-panel__brand {
+    font-family: $font-pretendard;
+    font-weight: 400;
+    font-size: 34px;
+}
+
+.side-project-panel__visual {
+    position: absolute;
+    top: 218px;
+    right: 90px;
+    z-index: 1;
+    width: 857px;
+    height: 676px;
+}
+
+.side-project-panel__visual img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    max-width: none;
+    object-fit: contain;
+}
+
+.side-project-panel__content {
+    position: absolute;
+    top: 202px;
+    left: 90px;
+    z-index: 2;
+    width: 560px;
+    max-width: calc(100% - 980px);
+}
+
+.side-project-panel__title {
+    margin: 0;
+    color: $color-black;
+    font-family: $font-ramaraja;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 1;
+}
+
+.side-project-panel__line {
+    display: block;
+    width: 123px;
+    height: 1px;
+    margin-top: 50px;
+    background-color: $color-black;
+}
+
+.side-project-panel__contribution {
+    margin: 50px 0 0;
+    color: $color-black;
+    font-family: $font-pretendard;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+}
+
+.side-project-panel__description {
+    margin: 20px 0 0;
+    color: $color-black;
+    font-family: $font-pretendard;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 1.5;
+    letter-spacing: 0.002em;
+    word-break: keep-all;
+}
+
+.side-project-panel__role {
+    margin: 60px 0 0;
+    color: $color-black;
+    font-family: $font-pretendard;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 1.4;
+    letter-spacing: 0.002em;
+}
+
+.side-project-panel__actions {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: 40px;
+}
+
+.side-project-panel__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 160px;
+    height: 55px;
+    padding: 0;
+    border-radius: 5px;
+    font-family: $font-tiro;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 1;
+    text-decoration: none;
+    cursor: pointer;
+    box-sizing: border-box;
+    appearance: none;
+}
+
+.side-project-panel__button--solid {
+    border: 1px solid $color-black;
+    background-color: $color-black;
+    color: #ebe8e3;
+}
+
+.side-project-panel__button--outline {
+    border: 1px solid $color-black;
+    background-color: transparent;
+    color: $color-black;
+}
+
+@include mobile {
+    .side-project-horizontal {
+        height: auto;
+        overflow: visible;
+    }
+
+    .side-project-horizontal__track {
+        display: block;
+        width: 100%;
+        height: auto;
+        transform: none !important;
+    }
+
+    .side-project-panel {
+        display: flex;
+        flex-direction: column;
+        flex: none;
+        width: 100%;
+        height: auto;
+        padding: 70px 24px 80px;
+        box-sizing: border-box;
+    }
+
+    .side-project-panel + .side-project-panel {
+        padding-top: 40px;
+    }
+
+    .side-project-panel__brand {
+        position: relative;
+        top: auto;
+        right: auto;
+        margin: 0 0 24px;
+        text-align: left;
+        font-size: 28px;
+    }
+
+    .side-project-panel--yellowballoon .side-project-panel__brand {
+        font-size: 26px;
+    }
+
+    .side-project-panel__visual {
+        position: relative;
+        top: auto;
+        right: auto;
+        width: 100%;
+        max-width: 354px;
+        height: auto;
+        aspect-ratio: 857 / 676;
+        margin: 0 auto;
+    }
+
+    .side-project-panel__content {
+        position: relative;
+        top: auto;
+        left: auto;
+        width: 100%;
+        max-width: 354px;
+        margin: 32px auto 0;
+    }
+
+    .side-project-panel__title {
+        font-size: 28px;
+    }
+
+    .side-project-panel__line {
+        margin-top: 32px;
+    }
+
+    .side-project-panel__contribution {
+        margin-top: 32px;
+        font-size: 16px;
+    }
+
+    .side-project-panel__description {
+        margin-top: 14px;
+        font-size: 15px;
+    }
+
+    .side-project-panel__role {
+        margin-top: 36px;
+        font-size: 14px;
+    }
+
+    .side-project-panel__actions {
+        margin-top: 24px;
+        gap: 10px;
+    }
+
+    .side-project-panel__button {
+        width: 140px;
+        height: 48px;
+        font-size: 18px;
+    }
+}
